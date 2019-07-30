@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <label for="user_name">Name: </label>
+    <select name="user_name" id="user_name">
+      <option value="choose" selected="selected">Choose...</option>
+      <option value="user1">User 1</option>
+      <option value="user2">User 2</option>
+      <option value="user3">User 3</option>
+    </select>
+    <p id="to_copy"></p>
+    <button id="btn" data-clipboard-target="#to_copy">Copy text!</button>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var btn = document.getElementById('btn');
+      var clipboard = new ClipboardJS(btn);
+    </script>
+  </body>
+</html>
