@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+#btn {
+  height: 30px;
+}
+
+#to_copy {
+  font-size: 2rem;
+}
+
+#to_copy::selection {
+  background-color: transparent;
+}
+
+#to_copy::-moz-selection {
+  background-color: transparent;
+}
